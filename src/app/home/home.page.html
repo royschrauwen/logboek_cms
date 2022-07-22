@@ -1,6 +1,6 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title> CMS </ion-title>
+    <ion-title> Showplanner </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,18 +10,25 @@
       <ion-col size-md="6" offset-md="3"
         ><ion-card>
           <ion-card-header>
-            <ion-card-title>
-              <h2>Projecten</h2>
-            </ion-card-title>
+            <ion-card-title> Projecten </ion-card-title>
+
+            <ion-card-subtitle
+              >Laatste 3 Gewijzigde Projecten</ion-card-subtitle
+            >
           </ion-card-header>
           <ion-card-content>
+            <ion-list>
+              <ion-item button>Project 1</ion-item>
+              <ion-item button>Project 2</ion-item>
+              <ion-item button>Project 3</ion-item>
+            </ion-list>
+            <ion-button expand="block">
+              <ion-icon slot="start" name="list"></ion-icon>
+              Alle Projecten
+            </ion-button>
             <ion-button expand="block">
               <ion-icon slot="start" name="add"></ion-icon>
               Nieuw Project Toevoegen
-            </ion-button>
-            <ion-button expand="block">
-              <ion-icon slot="start" name="pencil"></ion-icon>
-              Projecten Wijzigen
             </ion-button>
           </ion-card-content>
         </ion-card></ion-col
@@ -35,6 +42,31 @@
             </ion-card-title>
           </ion-card-header>
           <ion-card-content>
+            <ion-text>Vandaag</ion-text>
+            <ion-list>
+              <ion-item button>
+                <ion-label>Project 1</ion-label>
+              </ion-item>
+              <ion-item button>
+                <ion-label>Project 2</ion-label>
+              </ion-item>
+              <ion-item button>
+                <ion-label>Project 3</ion-label>
+              </ion-item>
+            </ion-list>
+            <ion-text>Morgen</ion-text>
+            <ion-list>
+              <ion-item button>
+                <ion-label>Project 1</ion-label>
+              </ion-item>
+              <ion-item button>
+                <ion-label>Project 2</ion-label>
+              </ion-item>
+              <ion-item button>
+                <ion-label>Project 3</ion-label>
+              </ion-item>
+            </ion-list>
+
             <ion-button expand="block">
               <ion-icon slot="start" name="add"></ion-icon>
               Nieuwe werkdag toevoegen
