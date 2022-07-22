@@ -11,6 +11,30 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'gebruikers',
+    loadChildren: () => import('./gebruikers/gebruikers/gebruikers.module').then( m => m.GebruikersPageModule)
+  },
+  {
+    path: 'nieuwe-gebruiker',
+    loadChildren: () => import('./gebruikers/nieuwe-gebruiker/nieuwe-gebruiker.module').then( m => m.NieuweGebruikerPageModule)
+  },
+  {
+    path: 'wijzig-gebruiker',
+    loadChildren: () => import('./gebruikers/wijzig-gebruiker/wijzig-gebruiker.module').then( m => m.WijzigGebruikerPageModule)
+  },
+  {
+    path: 'planning',
+    loadChildren: () => import('./planning/planning/planning.module').then( m => m.PlanningPageModule)
+  },
+  {
+    path: 'plannen',
+    loadChildren: () => import('./planning/plannen/plannen.module').then( m => m.PlannenPageModule)
+  },
+  {
+    path: 'nieuwe-data',
+    loadChildren: () => import('./planning/nieuwe-data/nieuwe-data.module').then( m => m.NieuweDataPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>planning</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  Test
+  <ion-list>
+    <ion-item>
+      <ion-label>test2</ion-label>
+    </ion-item>
+    <ion-item *ngFor="let plan of planningData">
+      <ion-label>{{ plan.id }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
